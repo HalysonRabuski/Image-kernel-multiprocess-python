@@ -4,7 +4,7 @@ import skimage
 import numpy as np
 import math
 
-im = imread("halyson.jpg", as_gray=True)
+im = imread("images/halyson.jpg", as_gray=True)
 numrows = len(im)
 numcols = len(im[0])
 
