@@ -49,7 +49,7 @@ if __name__ == '__main__':
 
     num_cores = mp.cpu_count()
     pool = Pool(processes=num_cores)
-    chunksize = math.floor((numrows * numcols) / 8)
+    chunksize = math.floor((numrows * numcols) / num_cores)
 
     print('possui ' + str(numrows * numcols) + " partes")
     print('vai começar, com um chunksize de: ', chunksize)
